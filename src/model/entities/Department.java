@@ -17,7 +17,9 @@ public class Department implements Serializable {
 		this.name = name;
 	}
 
-	
+	public Integer getId() {
+		return id;
+	}
 
 	public void setId(Integer id) {
 		this.id = id;
@@ -33,7 +35,6 @@ public class Department implements Serializable {
 
 	@Override
 	public String toString() {
-
 		return "Department [id=" + id + ", name=" + name + "]";
 	}
 
@@ -60,7 +61,5 @@ public class Department implements Serializable {
 		} else if (!id.equals(other.id))
 			return false;
 		return true;
-	}
-
-	
+	}	
 }
